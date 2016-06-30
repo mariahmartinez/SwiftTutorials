@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Lesson2
+//  ViewControllersLesson
 //
-//  Created by Mariah Martinez on 6/28/16.
+//  Created by Mariah Martinez on 6/30/16.
 //  Copyright © 2016 Mariah Martinez. All rights reserved.
 //
 

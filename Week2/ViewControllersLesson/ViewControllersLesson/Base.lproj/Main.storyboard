@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lesson2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewControllersLesson" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,23 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLV-C1-9Vj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-mn-hGF">
                                 <rect key="frame" x="271" y="285" width="59" height="30"/>
-                                <state key="normal" title="Click me"/>
+                                <state key="normal" title="Click Me"/>
                                 <connections>
-                                    <action selector="experiment" destination="BYZ-38-t0r" eventType="touchUpInside" id="k61-4v-70G"/>
+                                    <action selector="experiment" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wq-da-wAS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OLV-C1-9Vj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EfI-Ba-Ict"/>
-                            <constraint firstItem="OLV-C1-9Vj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GTF-O1-dXP"/>
+                            <constraint firstItem="TTe-mn-hGF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="afn-nE-wOJ"/>
+                            <constraint firstItem="TTe-mn-hGF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dMo-n3-6pS"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="clickMeButton" destination="OLV-C1-9Vj" id="x0f-2j-MLh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

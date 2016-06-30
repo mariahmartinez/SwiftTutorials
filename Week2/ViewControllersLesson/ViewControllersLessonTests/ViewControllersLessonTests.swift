@@ -1,15 +1,15 @@
 //
-//  Lesson2Tests.swift
-//  Lesson2Tests
+//  ViewControllersLessonTests.swift
+//  ViewControllersLessonTests
 //
-//  Created by Mariah Martinez on 6/28/16.
+//  Created by Mariah Martinez on 6/30/16.
 //  Copyright © 2016 Mariah Martinez. All rights reserved.
 //
 
 import XCTest
-@testable import Lesson2
+@testable import ViewControllersLesson
 
-class Lesson2Tests: XCTestCase {
+class ViewControllersLessonTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
