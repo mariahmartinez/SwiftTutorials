@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func experiment() {
+        
+        // Different pickers 
+        
         // Present the image picker
 //        let controller = UIImagePickerController()
 //        self.presentViewController(controller, animated: true, completion:nil)
