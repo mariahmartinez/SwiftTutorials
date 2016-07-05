@@ -33,18 +33,24 @@ class ViewController: UIViewController {
         return shape
     }
     
-    
-    @IBAction private func playRock(sender: UIButton) {
-        performSegueWithIdentifier("play", sender: sender)
-    }
-    
-    
     @IBAction private func playPaper(sender: UIButton) {
-        performSegueWithIdentifier("play", sender: sender)
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ResultView") as! ResultsController
+        
+        controller.userChoice = determineUserShape(sender)
+        presentViewController(controller, animated:true, completion: nil)
+        
     }
     
     
     @IBAction private func playScissors(sender: UIButton) {
+        performSegueWithIdentifier("play", sender: sender)
+    }
+    
+    @IBAction private func playSpock(sender: UIButton) {
+        performSegueWithIdentifier("play", sender: sender)
+    }
+    
+    @IBAction private func playLizard(sender: UIButton) {
         performSegueWithIdentifier("play", sender: sender)
     }
 }

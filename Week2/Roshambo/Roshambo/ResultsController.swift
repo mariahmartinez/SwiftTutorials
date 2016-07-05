@@ -25,12 +25,13 @@ class ResultsController: UIViewController {
     func showResults() {
         let opponentChoice = randomPlay()
         var text: String
-        let playString = (userChoice + " vs. " + opponentChoice)
+        let playString = (userChoice! + " vs. " + opponentChoice)
         
         switch (userChoice!, opponentChoice) {
         case let (user, opponent) where user == opponent:
             text = (playString) + " ,it's a tie!"
-        case ("rock", "scissors"), ("paper", "rock"), ("scissors", "paper"):
+        case ("rock", "scissors"), ("paper", "rock"), ("scissors", "paper"), ("spock", "scissors"), ("spock", "rock")
+            , ("lizard", "paper"), ("lizard", "spock"):
             text = "You win with! " + playString
         default:
             text = "You lose with " + playString
@@ -40,8 +41,8 @@ class ResultsController: UIViewController {
     }
     
     func randomPlay() -> String {
-        let options = ["rock", "paper", "scissors"]
-        let randomChoice = Int(arc4random_uniform(3))
+        let options = ["rock", "paper", "scissors", "spock", "lizard"]
+        let randomChoice = Int(arc4random_uniform(5))
         return options[randomChoice]
     }
     

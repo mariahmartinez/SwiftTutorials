@@ -19,7 +19,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mB-rj-Zcc" userLabel="Paper">
                                 <rect key="frame" x="282" y="206" width="37" height="32"/>
-                                <accessibility key="accessibilityConfiguration" identifier="paper"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="IUS-eo-DsG"/>
                                     <constraint firstAttribute="width" constant="37" id="gdE-qE-gaZ"/>
@@ -27,18 +26,6 @@
                                 <state key="normal" title="paper" image="Paper"/>
                                 <connections>
                                     <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LdR-uB-e3C"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhb-xu-1Et" userLabel="Rock">
-                                <rect key="frame" x="211" y="284" width="37" height="32"/>
-                                <accessibility key="accessibilityConfiguration" identifier="rock"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="Fsy-X4-qEa"/>
-                                    <constraint firstAttribute="width" constant="37" id="avu-ab-sG6"/>
-                                </constraints>
-                                <state key="normal" title="rock" image="Rock"/>
-                                <connections>
-                                    <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mga-rN-t1d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHs-Dm-iXZ" userLabel="Scissors">
@@ -52,15 +39,52 @@
                                     <action selector="playScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FwT-wd-ula"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNd-rF-TPQ" userLabel="Spock">
+                                <rect key="frame" x="196" y="365" width="66" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="vzW-uL-rSQ"/>
+                                    <constraint firstAttribute="height" constant="62" id="yaI-Fn-32i"/>
+                                </constraints>
+                                <state key="normal" title="spock" image="Spock"/>
+                                <connections>
+                                    <action selector="playSpock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TlH-YA-7u0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLG-s7-LyM">
+                                <rect key="frame" x="331" y="365" width="78" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="XSE-lA-D3o"/>
+                                    <constraint firstAttribute="width" constant="78" id="uVl-rs-tGB"/>
+                                </constraints>
+                                <state key="normal" title="lizard" image="Lizard"/>
+                                <connections>
+                                    <action selector="playLizard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIa-aZ-5FB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhb-xu-1Et" userLabel="Rock">
+                                <rect key="frame" x="211" y="284" width="37" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Fsy-X4-qEa"/>
+                                    <constraint firstAttribute="width" constant="37" id="avu-ab-sG6"/>
+                                </constraints>
+                                <state key="normal" title="rock" image="Rock"/>
+                                <connections>
+                                    <segue destination="NpV-2F-PdE" kind="presentation" identifier="play" id="eaU-uh-au6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vhb-xu-1Et" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3pA-Lt-a9r"/>
+                            <constraint firstItem="RLG-s7-LyM" firstAttribute="leading" secondItem="6mB-rj-Zcc" secondAttribute="trailing" constant="12" id="8Fq-je-wml"/>
                             <constraint firstItem="rHs-Dm-iXZ" firstAttribute="top" secondItem="6mB-rj-Zcc" secondAttribute="bottom" constant="46" id="9m4-HX-kVU"/>
+                            <constraint firstItem="6mB-rj-Zcc" firstAttribute="leading" secondItem="MNd-rF-TPQ" secondAttribute="trailing" constant="20" id="EmD-Sm-bKF"/>
                             <constraint firstItem="rHs-Dm-iXZ" firstAttribute="leading" secondItem="6mB-rj-Zcc" secondAttribute="trailing" constant="33" id="IVN-yu-ddf"/>
                             <constraint firstItem="6mB-rj-Zcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JmN-Lg-05X"/>
                             <constraint firstItem="vhb-xu-1Et" firstAttribute="top" secondItem="6mB-rj-Zcc" secondAttribute="bottom" constant="46" id="LcZ-c7-ElI"/>
                             <constraint firstItem="6mB-rj-Zcc" firstAttribute="leading" secondItem="vhb-xu-1Et" secondAttribute="trailing" constant="34" id="X2v-sP-3q2"/>
+                            <constraint firstItem="RLG-s7-LyM" firstAttribute="top" secondItem="rHs-Dm-iXZ" secondAttribute="bottom" constant="49" id="ncV-RM-80c"/>
+                            <constraint firstItem="MNd-rF-TPQ" firstAttribute="top" secondItem="vhb-xu-1Et" secondAttribute="bottom" constant="49" id="nvO-Ot-s7H"/>
                             <constraint firstItem="vhb-xu-1Et" firstAttribute="top" secondItem="6mB-rj-Zcc" secondAttribute="bottom" constant="40" id="u37-b2-rxt"/>
                         </constraints>
                         <variation key="default">
@@ -69,9 +93,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <segue destination="NpV-2F-PdE" kind="presentation" identifier="play" id="OOM-vS-7Co"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +101,7 @@
         <!--Results Controller-->
         <scene sceneID="HMW-u6-VZc">
             <objects>
-                <viewController id="NpV-2F-PdE" customClass="ResultsController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultView" id="NpV-2F-PdE" customClass="ResultsController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iik-iD-hJy"/>
                         <viewControllerLayoutGuide type="bottom" id="Uf3-7M-C41"/>
@@ -131,8 +152,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Lizard" width="72" height="56"/>
         <image name="Paper" width="75" height="65"/>
         <image name="Rock" width="75" height="65"/>
         <image name="Scissors" width="75" height="65"/>
+        <image name="Spock" width="60" height="62"/>
     </resources>
 </document>
